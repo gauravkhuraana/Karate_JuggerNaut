@@ -1,0 +1,21 @@
+<testsuite failures="0" name="src/test/java/features/getAllBookings.feature" skipped="0" tests="2" time="4.332991">
+  <testcase classname="src.test.java.features.getAllBookings" name="to ping on the site" time="3.273817">
+    <system-out>Given url 'https://restful-booker.herokuapp.com' .......................... passed
+And path '/ping' .......................................................... passed
+When method GET ........................................................... passed
+Then status 201 ........................................................... passed
+And print response ........................................................ passed</system-out>
+  </testcase>
+  <testcase classname="src.test.java.features.getAllBookings" name="to get all the bookings present on the site" time="1.059175">
+    <system-out>Given url 'https://restful-booker.herokuapp.com' .......................... passed
+And path '/ping' .......................................................... passed
+When method GET ........................................................... passed
+Then status 201 ........................................................... passed
+And print response ........................................................ passed
+Given url 'https://restful-booker.herokuapp.com' .......................... passed
+And path '/booking' ....................................................... passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed
+And print response ........................................................ passed</system-out>
+  </testcase>
+</testsuite>

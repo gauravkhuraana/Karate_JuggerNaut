@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+<meta charset="utf-8">
+    
+<meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
+    
+<link href="res/bootstrap.min.css" rel="stylesheet" type="text/css">
+    
+<link href="res/karate-report.css" rel="stylesheet" type="text/css">
+    
+<link href="favicon.ico" rel="shortcut icon">
+    
+<script src="res/jquery.min.js" type="text/javascript"></script>
+    <script src="res/jquery.tablesorter.min.js" type="text/javascript"></script>
+    <script src="res/bootstrap.min.js" type="text/javascript"></script>
+    <script src="res/karate-report.js" type="text/javascript"></script>
+    
+<title>src.test.java.features.postBodyInExternalFile</title>
+  
+</head>
+  
+<body>
+    
+<div id="root-container">
+      
+<div id="leftnav">
+        
+<div class="nav-logo">
+          
+<a href="karate-summary.html">
+            <img alt="Karate" src="res/karate-logo.svg">
+          </a>
+          
+<div class="nav-count">
+            
+<div class="bg-success" id="nav-pass">0</div>
+            
+<div class="bg-danger" id="nav-fail">3</div>
+          
+</div>
+        
+</div>
+        
+<div id="nav-type">Scenarios</div>         
+        
+<div id="nav-date">2021-02-16 07:25:15 PM</div>        
+      
+<div class="nav-container">
+<div class="nav-item failed">
+<a href="#[1:11]">[1:11] A post request using hardcoded request body </a>
+</div>
+<div class="nav-item failed">
+<a href="#[2:26]">[2:26] A post request using external file </a>
+</div>
+<div class="nav-item failed">
+<a href="#[3:35]">[3:35] A post request using tables </a>
+</div>
+</div>
+</div>
+      
+<div id="content">
+      
+<div class="page-heading alert alert-primary">
+<a href="karate-summary.html">Summary</a><span class="feature-label">|</span><a href="karate-tags.html">Tags</a><span class="feature-label">|</span><span class="feature-label">Feature:</span><span class="feature-name">src/test/java/features/postBodyInExternalFile.feature</span><span class="feature-description">Get body from external file</span>
+</div>
+<div class="scenario">
+<div class="scenario-heading" id="[1:11]">
+<div class="heading-container">
+<div class="scenario-tags"></div>
+<span class="scenario-keyword">Scenario: [1:11]</span><span class="scenario-name">A post request using hardcoded request body </span>
+</div>
+<div class="scenario-time failed">ms: 364</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="[1:11]bg">
+<div class="step-ref bg-step">&gt;&gt;</div>
+<div class="step-cell passed">Background:</div>
+</div>
+<div class="time-cell passed"></div>
+</div>
+<div class="step-row" data-parent="[1:11]bg">
+<div class="step-container" id="1">
+<div class="step-ref bg-step">1</div>
+<div class="step-cell passed">* def URL = 'https://gorest.co.in/'</div>
+</div>
+<div class="time-cell passed">2</div>
+</div>
+<div class="preformatted" data-parent="1">19:25:14.469 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js</div>
+<div class="step-row" data-parent="[1:11]bg">
+<div class="step-container" id="2">
+<div class="step-ref bg-step">2</div>
+<div class="step-cell passed">* def PATH = 'public-api/users/'</div>
+</div>
+<div class="time-cell passed">2</div>
+</div>
+<div class="step-row" data-parent="[1:11]bg">
+<div class="step-container" id="3">
+<div class="step-ref bg-step">3</div>
+<div class="step-cell passed">* def filepath = '../resources/inputFile.json'</div>
+</div>
+<div class="time-cell passed">2</div>
+</div>
+<div class="step-row" data-parent="[1:11]bg">
+<div class="step-container" id="4">
+<div class="step-ref bg-step">4</div>
+<div class="step-cell passed">Given url URL</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row" data-parent="[1:11]bg">
+<div class="step-container" id="5">
+<div class="step-ref bg-step">5</div>
+<div class="step-cell passed">And path PATH</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row" data-parent="[1:11]bg">
+<div class="step-container" id="6">
+<div class="step-ref bg-step">6</div>
+<div class="step-cell passed">And header Authorization = 'Bearer ce8cd7b94a069f5ac4e7fcc48c946353926a69c47b4b7126db66d31791335787'</div>
+</div>
+<div class="time-cell passed">2</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="7">
+<div class="step-ref passed">7</div>
+<div class="step-cell passed">And request</div>
+</div>
+<div class="time-cell passed">1</div>
+</div>
+<div class="preformatted" data-parent="7">{
+  "email":"tester3@udzial.com",
+  "name":"gaurav khurana",
+  "status":"Active",
+  "gender":"Male"
+}</div>
+<div class="step-row">
+<div class="step-container" id="8">
+<div class="step-ref passed">8</div>
+<div class="step-cell passed">When method POST</div>
+</div>
+<div class="time-cell passed">351</div>
+</div>
+<div class="preformatted" data-parent="8">19:25:14.482 request:
+1 &gt; POST https://gorest.co.in/public-api/users/
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Authorization: Bearer ce8cd7b94a069f5ac4e7fcc48c946353926a69c47b4b7126db66d31791335787
+1 &gt; Connection: Keep-Alive
+1 &gt; Content-Length: 88
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Host: gorest.co.in
+1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_241)
+{"email":"tester3@udzial.com","name":"gaurav khurana","status":"Active","gender":"Male"}
+
+19:25:14.829 response time in milliseconds: 345.42
+1 &lt; 200
+1 &lt; Cache-Control: max-age=0, private, must-revalidate
+1 &lt; Connection: keep-alive
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Date: Tue, 16 Feb 2021 13:55:13 GMT
+1 &lt; ETag: W/"c449a15232e402aaacaed9f43dd2e742"
+1 &lt; Expect-CT: enforce; max-age=3600
+1 &lt; Referrer-Policy: strict-origin-when-cross-origin
+1 &lt; Server: nginx
+1 &lt; Strict-Transport-Security: max-age=31536000; includeSubDomains
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Vary: [Accept-Encoding, Origin]
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-Download-Options: noopen
+1 &lt; X-Frame-Options: [SAMEORIGIN, sameorigin]
+1 &lt; X-Permitted-Cross-Domain-Policies: none
+1 &lt; X-Request-Id: 330bfc59-be3b-4b72-9f15-e640f7d86c24
+1 &lt; X-Runtime: 0.012396
+1 &lt; X-XSS-Protection: 1; mode=block
+{"code":422,"meta":null,"data":[{"field":"email","message":"has already been taken"}]}</div>
+<div class="step-row">
+<div class="step-container" id="9">
+<div class="step-ref passed">9</div>
+<div class="step-cell passed">Then status 200</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="10">
+<div class="step-ref passed">10</div>
+<div class="step-cell passed">And print response</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="preformatted" data-parent="10">19:25:14.830 [print] {
+  "code": 422,
+  "data": [
+    {
+      "field": "email",
+      "message": "has already been taken"
+    }
+  ],
+  "meta": null
+}</div>
+<div class="step-row">
+<div class="step-container" id="11">
+<div class="step-ref failed">11</div>
+<div class="step-cell failed">And match response.code == 201</div>
+</div>
+<div class="time-cell failed">5</div>
+</div>
+<div class="preformatted" data-parent="11">19:25:14.834 assertion failed: path: $.code, actual: 422, expected: 201, reason: not equal (Integer)
+postBodyInExternalFile.feature:24 - path: $.code, actual: 422, expected: 201, reason: not equal (Integer)</div>
+</div>
+<div class="scenario">
+<div class="scenario-heading" id="[2:26]">
+<div class="heading-container">
+<div class="scenario-tags"></div>
+<span class="scenario-keyword">Scenario: [2:26]</span><span class="scenario-name">A post request using external file </span>
+</div>
+<div class="scenario-time failed">ms: 694</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="[2:26]bg">
+<div class="step-ref bg-step">&gt;&gt;</div>
+<div class="step-cell passed">Background:</div>
+</div>
+<div class="time-cell passed"></div>
+</div>
+<div class="step-row" data-parent="[2:26]bg">
+<div class="step-container" id="12">
+<div class="step-ref bg-step">12</div>
+<div class="step-cell passed">* def URL = 'https://gorest.co.in/'</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="preformatted" data-parent="12">19:25:14.848 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js</div>
+<div class="step-row" data-parent="[2:26]bg">
+<div class="step-container" id="13">
+<div class="step-ref bg-step">13</div>
+<div class="step-cell passed">* def PATH = 'public-api/users/'</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row" data-parent="[2:26]bg">
+<div class="step-container" id="14">
+<div class="step-ref bg-step">14</div>
+<div class="step-cell passed">* def filepath = '../resources/inputFile.json'</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row" data-parent="[2:26]bg">
+<div class="step-container" id="15">
+<div class="step-ref bg-step">15</div>
+<div class="step-cell passed">Given url URL</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row" data-parent="[2:26]bg">
+<div class="step-container" id="16">
+<div class="step-ref bg-step">16</div>
+<div class="step-cell passed">And path PATH</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row" data-parent="[2:26]bg">
+<div class="step-container" id="17">
+<div class="step-ref bg-step">17</div>
+<div class="step-cell passed">And header Authorization = 'Bearer ce8cd7b94a069f5ac4e7fcc48c946353926a69c47b4b7126db66d31791335787'</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="18">
+<div class="step-ref passed">18</div>
+<div class="step-cell passed">And request read(filepath)</div>
+</div>
+<div class="time-cell passed">358</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="19">
+<div class="step-ref passed">19</div>
+<div class="step-cell passed">When method POST</div>
+</div>
+<div class="time-cell passed">334</div>
+</div>
+<div class="preformatted" data-parent="19">19:25:15.210 request:
+1 &gt; POST https://gorest.co.in/public-api/users/
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Authorization: Bearer ce8cd7b94a069f5ac4e7fcc48c946353926a69c47b4b7126db66d31791335787
+1 &gt; Connection: Keep-Alive
+1 &gt; Content-Length: 89
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Host: gorest.co.in
+1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_241)
+{"email":"tester33@udzial.com","name":"gaurav khurana","status":"Active","gender":"Male"}
+
+19:25:15.542 response time in milliseconds: 331.44
+1 &lt; 200
+1 &lt; Cache-Control: max-age=0, private, must-revalidate
+1 &lt; Connection: keep-alive
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Date: Tue, 16 Feb 2021 13:55:13 GMT
+1 &lt; ETag: W/"c449a15232e402aaacaed9f43dd2e742"
+1 &lt; Expect-CT: enforce; max-age=3600
+1 &lt; Referrer-Policy: strict-origin-when-cross-origin
+1 &lt; Server: nginx
+1 &lt; Strict-Transport-Security: max-age=31536000; includeSubDomains
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Vary: [Accept-Encoding, Origin]
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-Download-Options: noopen
+1 &lt; X-Frame-Options: [SAMEORIGIN, sameorigin]
+1 &lt; X-Permitted-Cross-Domain-Policies: none
+1 &lt; X-Request-Id: 8d789e41-b5e7-4044-b7c1-3dbf60ffd740
+1 &lt; X-Runtime: 0.010892
+1 &lt; X-XSS-Protection: 1; mode=block
+{"code":422,"meta":null,"data":[{"field":"email","message":"has already been taken"}]}</div>
+<div class="step-row">
+<div class="step-container" id="20">
+<div class="step-ref passed">20</div>
+<div class="step-cell passed">Then status 200</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="21">
+<div class="step-ref passed">21</div>
+<div class="step-cell passed">And print response</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="preformatted" data-parent="21">19:25:15.543 [print] {
+  "code": 422,
+  "data": [
+    {
+      "field": "email",
+      "message": "has already been taken"
+    }
+  ],
+  "meta": null
+}</div>
+<div class="step-row">
+<div class="step-container" id="22">
+<div class="step-ref failed">22</div>
+<div class="step-cell failed">And match response.code == 201</div>
+</div>
+<div class="time-cell failed">1</div>
+</div>
+<div class="preformatted" data-parent="22">19:25:15.544 assertion failed: path: $.code, actual: 422, expected: 201, reason: not equal (Integer)
+postBodyInExternalFile.feature:33 - path: $.code, actual: 422, expected: 201, reason: not equal (Integer)</div>
+</div>
+<div class="scenario">
+<div class="scenario-heading" id="[3:35]">
+<div class="heading-container">
+<div class="scenario-tags"></div>
+<span class="scenario-keyword">Scenario: [3:35]</span><span class="scenario-name">A post request using tables </span>
+</div>
+<div class="scenario-time failed">ms: 399</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="[3:35]bg">
+<div class="step-ref bg-step">&gt;&gt;</div>
+<div class="step-cell passed">Background:</div>
+</div>
+<div class="time-cell passed"></div>
+</div>
+<div class="step-row" data-parent="[3:35]bg">
+<div class="step-container" id="23">
+<div class="step-ref bg-step">23</div>
+<div class="step-cell passed">* def URL = 'https://gorest.co.in/'</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="preformatted" data-parent="23">19:25:15.551 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js</div>
+<div class="step-row" data-parent="[3:35]bg">
+<div class="step-container" id="24">
+<div class="step-ref bg-step">24</div>
+<div class="step-cell passed">* def PATH = 'public-api/users/'</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row" data-parent="[3:35]bg">
+<div class="step-container" id="25">
+<div class="step-ref bg-step">25</div>
+<div class="step-cell passed">* def filepath = '../resources/inputFile.json'</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row" data-parent="[3:35]bg">
+<div class="step-container" id="26">
+<div class="step-ref bg-step">26</div>
+<div class="step-cell passed">Given url URL</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row" data-parent="[3:35]bg">
+<div class="step-container" id="27">
+<div class="step-ref bg-step">27</div>
+<div class="step-cell passed">And path PATH</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row" data-parent="[3:35]bg">
+<div class="step-container" id="28">
+<div class="step-ref bg-step">28</div>
+<div class="step-cell passed">And header Authorization = 'Bearer ce8cd7b94a069f5ac4e7fcc48c946353926a69c47b4b7126db66d31791335787'</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="29">
+<div class="step-ref passed">29</div>
+<div class="step-cell passed">And table t1</div>
+</div>
+<div class="time-cell passed">18</div>
+</div>
+<table data-parent="29">
+<tr>
+<td>email</td><td>name</td><td>status</td><td>gender</td>
+</tr>
+<tr>
+<td>"tester121@udzial.com"</td><td>"Gaurav khurana"</td><td>"Active"</td><td>"Male"</td>
+</tr>
+<tr>
+<td>"testerSoftware@udzial.com"</td><td>"Samriddhi khurana"</td><td>"Active"</td><td>"Female"</td>
+</tr>
+</table>
+<div class="step-row">
+<div class="step-container">
+<div class="step-ref passed"></div>
+<div class="step-cell comment">#   |{"email":"tester121@udzial.com","name":"gaurav khurana","status":"active","gender":"male"}|</div>
+</div>
+<div class="time-cell comment"></div>
+</div>
+<div class="step-row">
+<div class="step-container" id="30">
+<div class="step-ref passed">30</div>
+<div class="step-cell passed">And request t1[1]</div>
+</div>
+<div class="time-cell passed">22</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="31">
+<div class="step-ref passed">31</div>
+<div class="step-cell passed">When method POST</div>
+</div>
+<div class="time-cell passed">357</div>
+</div>
+<div class="preformatted" data-parent="31">19:25:15.597 request:
+1 &gt; POST https://gorest.co.in/public-api/users/
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Authorization: Bearer ce8cd7b94a069f5ac4e7fcc48c946353926a69c47b4b7126db66d31791335787
+1 &gt; Connection: Keep-Alive
+1 &gt; Content-Length: 100
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Host: gorest.co.in
+1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_241)
+{"email":"testerSoftware@udzial.com","name":"Samriddhi khurana","status":"Active","gender":"Female"}
+
+19:25:15.950 response time in milliseconds: 352.60
+1 &lt; 200
+1 &lt; Cache-Control: max-age=0, private, must-revalidate
+1 &lt; Connection: keep-alive
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Date: Tue, 16 Feb 2021 13:55:14 GMT
+1 &lt; ETag: W/"c449a15232e402aaacaed9f43dd2e742"
+1 &lt; Expect-CT: enforce; max-age=3600
+1 &lt; Referrer-Policy: strict-origin-when-cross-origin
+1 &lt; Server: nginx
+1 &lt; Strict-Transport-Security: max-age=31536000; includeSubDomains
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Vary: [Accept-Encoding, Origin]
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-Download-Options: noopen
+1 &lt; X-Frame-Options: [SAMEORIGIN, sameorigin]
+1 &lt; X-Permitted-Cross-Domain-Policies: none
+1 &lt; X-Request-Id: f7c4dff9-272d-46ff-bb98-030b1c4da6bc
+1 &lt; X-Runtime: 0.009276
+1 &lt; X-XSS-Protection: 1; mode=block
+{"code":422,"meta":null,"data":[{"field":"email","message":"has already been taken"}]}</div>
+<div class="step-row">
+<div class="step-container" id="32">
+<div class="step-ref passed">32</div>
+<div class="step-cell passed">Then status 200</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="33">
+<div class="step-ref passed">33</div>
+<div class="step-cell passed">And print response</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="preformatted" data-parent="33">19:25:15.951 [print] {
+  "code": 422,
+  "data": [
+    {
+      "field": "email",
+      "message": "has already been taken"
+    }
+  ],
+  "meta": null
+}</div>
+<div class="step-row">
+<div class="step-container" id="34">
+<div class="step-ref failed">34</div>
+<div class="step-cell failed">And match response.code == 201</div>
+</div>
+<div class="time-cell failed">1</div>
+</div>
+<div class="preformatted" data-parent="34">19:25:15.952 assertion failed: path: $.code, actual: 422, expected: 201, reason: not equal (Integer)
+postBodyInExternalFile.feature:49 - path: $.code, actual: 422, expected: 201, reason: not equal (Integer)</div>
+</div>
+</div>
+    
+</div>   
+  
+</body>
+
+</html>

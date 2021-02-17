@@ -1,0 +1,17 @@
+<testsuite failures="0" name="src/test/java/features/postRequest.feature" skipped="0" tests="1" time="2.717796">
+  <testcase classname="src.test.java.features.postRequest" name="Run the first post scenario" time="2.717796">
+    <system-out>* def URL = 'https://gorest.co.in/' ....................................... passed
+* def PATH = 'public-api/users/' .......................................... passed
+Given url URL ............................................................. passed
+And path PATH ............................................................. passed
+And header Authorization = 'Bearer ce8cd7b94a069f5ac4e7fcc48c946353926a69c47b4b7126db66d31791335787' . passed
+And request ............................................................... passed
+When method POST .......................................................... passed
+Then status 200 ........................................................... passed
+And print response ........................................................ passed
+And print response.data.email ............................................. passed
+And print response.code ................................................... passed
+And match response.code == 201 ............................................ passed
+And match response.data.email contains 'khuraana' ......................... passed</system-out>
+  </testcase>
+</testsuite>

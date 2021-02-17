@@ -1,0 +1,17 @@
+<testsuite failures="1" name="src/test/java/features/getSpecificBooking.feature" skipped="0" tests="1" time="3.640353">
+  <testcase classname="src.test.java.features.getSpecificBooking" name="Get a sample response from postman" time="3.640353">
+    <failure message="getSpecificBooking.feature:15 - path: $.headers.x-forwarded-proto, actual: 'https', expected: 'https20', reason: not equal">Given url 'https://postman-echo.com' ...................................... passed
+And path 'get' ............................................................ passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed
+And print response ........................................................ passed
+And print response.headers.x-forwarded-proto .............................. passed
+And print response.headers.host ........................................... passed
+And print response.url .................................................... passed
+And match response.headers.x-forwarded-proto == 'https20' ................. failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: getSpecificBooking.feature:15 - path: $.headers.x-forwarded-proto, actual: 'https', expected: 'https20', reason: not equal&#13;
+	at ✽.And match response.headers.x-forwarded-proto == 'https20' (getSpecificBooking.feature:15)</failure>
+  </testcase>
+</testsuite>
