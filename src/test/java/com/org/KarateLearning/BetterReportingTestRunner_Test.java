@@ -17,7 +17,7 @@ import static org.junit.Assert.assertTrue;
 
 //@RunWith(Karate.class)
 //@KarateOptions(features="src/test/java/features")
-public class BetterReportingTestRunner {
+public class BetterReportingTestRunner_Test {
     @Test
     public void parallel() {
         Results res = Runner.path("classpath:features").tags("~@ignore").parallel(5);
