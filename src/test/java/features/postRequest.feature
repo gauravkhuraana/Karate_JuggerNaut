@@ -12,7 +12,7 @@ Feature: Testing the post REquest
       And request
       """
      {
-   "email":"ggauraaaavkhuraana@yahoo.com",
+   "email":"ghana@yahoo.com",
    "name":"gaurav khurana",
    "status":"Active",
    "gender":"Male"
@@ -27,4 +27,4 @@ Feature: Testing the post REquest
       And print response.data.email
       And print response.code
       And match response.code == 201
-      And match response.data.email contains 'khuraana'
+      And match response.data.email contains '.com'
