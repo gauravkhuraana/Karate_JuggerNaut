@@ -1,12 +1,13 @@
+/*
 package com.org.KarateLearning;
 
 
-import com.intuit.karate.KarateOptions;
+//import com.intuit.karate.KarateOptions;
 import com.intuit.karate.Results;
 import com.intuit.karate.Runner;
-import com.intuit.karate.junit4.Karate;
+//import com.intuit.karate.junit4.Karate;
 import org.junit.Test;
-import org.junit.runner.RunWith;
+//import org.junit.runner.RunWith;
 
 import static org.junit.Assert.assertTrue;
 
@@ -21,3 +22,4 @@ public class TestRunner_Test {
         assertTrue(res.getErrorMessages(), res.getFailCount() == 0);
     }
 }
+*/

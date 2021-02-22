@@ -12,7 +12,7 @@ Feature: Get body from external file
       And request
       """
 {
-  "email":"tester3@udzial.com",
+  "email":"teste3@udzial.com",
   "name":"gaurav khurana",
   "status":"Active",
   "gender":"Male"

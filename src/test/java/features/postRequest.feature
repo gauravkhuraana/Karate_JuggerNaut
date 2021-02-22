@@ -1,22 +1,23 @@
 Feature: Testing the post REquest
 
   Background:
-    * def URL = 'https://gorest.co.in/'
-    * def PATH = 'public-api/users/'
+    * def URL = 'https://gorest.co.in'
+    * def PATH = 'public-api/users'
     Given url URL
 
     Scenario: Run the first post scenario
 
       And path PATH
       And header Authorization = 'Bearer ce8cd7b94a069f5ac4e7fcc48c946353926a69c47b4b7126db66d31791335787'
+      And header Content-Type = 'application/json; charset=utf-8'
       And request
       """
-     {
-   "email":"ghana@yahoo.com",
-   "name":"gaurav khurana",
-   "status":"Active",
-   "gender":"Male"
-    }
+   {
+    "email": "amjtest@udzaa.com",
+    "name": "Gaurav",
+    "status": "Active",
+    "gender": "Male"
+   }
 
       """
 

@@ -1,3 +1,4 @@
+/*
 package com.org.KarateLearning;
 
 
@@ -35,3 +36,4 @@ public class BetterReportingTestRunner_Test {
         reportBuilder.generateReports();
     }
 }
+*/
