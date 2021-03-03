@@ -1,0 +1,55 @@
+{
+  "total": 12,
+  "per_page": 6,
+
+  "data": [
+    {
+      "color": "#DECDBE",
+      "year": 2006,
+      "name": "sand dollar",
+      "id": 7,
+      "pantone_value": "13-1106"
+    },
+    {
+      "color": "#9B1B30",
+      "year": 2007,
+      "name": "chili pepper",
+      "id": 8,
+      "pantone_value": "19-1557"
+    },
+    {
+      "color": "#5A5B9F",
+      "year": 2008,
+      "name": "blue iris",
+      "id": 9,
+      "pantone_value": "18-3943"
+    },
+    {
+      "color": "#F0C05A",
+      "year": 2009,
+      "name": "mimosa",
+      "id": 10,
+      "pantone_value": "14-0848"
+    },
+    {
+      "color": "#45B5AA",
+      "year": 2010,
+      "name": "turquoise",
+      "id": 11,
+      "pantone_value": "15-5519"
+    },
+    {
+      "color": "#D94F70",
+      "year": 2011,
+      "name": "honeysuckle",
+      "id": 12,
+      "pantone_value": "18-2120"
+    }
+  ],
+  "page": 2,
+  "total_pages": 2,
+  "support": {
+    "text": "To keep ReqRes free, contributions towards server costs are appreciated!",
+    "url": "https://reqres.in/#support-heading"
+  }
+}
