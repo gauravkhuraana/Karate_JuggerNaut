@@ -6,5 +6,10 @@ function fun()
     pass: 'Xerox@123'
 
  };
- return config;
+ var result = karate.callSingle('postDynamicEmailId.feature')
+ config.resultFromConfig= result
+
+ var resultAll = karate.call('postDynamicEmailId.feature')
+ config.resultAll = resultAll
+  return config;
 }

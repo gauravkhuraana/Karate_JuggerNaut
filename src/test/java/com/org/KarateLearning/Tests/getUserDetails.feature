@@ -14,5 +14,5 @@ Given url URL
 
   Then status 200
   And print response
-  And match response.data.email == emailId
-  And match response.data.name contains 'Arora'
+  And match response.data.email != emailId
+  And match response.data.name !contains 'Arora'
