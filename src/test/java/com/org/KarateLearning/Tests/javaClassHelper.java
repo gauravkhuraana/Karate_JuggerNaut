@@ -1,6 +1,5 @@
-package features;
+package com.org.KarateLearning.Tests;
 
-import com.intuit.karate.Json;
 //import karate.io.netty.handler.codec.json.JsonObjectDecoder;
 
 import java.io.FileNotFoundException;

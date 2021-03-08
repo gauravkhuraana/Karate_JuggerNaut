@@ -12,7 +12,7 @@ public class junit5Runner_Test {
 
     @Karate.Test
     Karate testSample() {
-        return Karate.run("features/getUserDetails").relativeTo(getClass());
+        return Karate.run("functional/getUserDetails").relativeTo(getClass());
     }
 
     @Karate.Test
