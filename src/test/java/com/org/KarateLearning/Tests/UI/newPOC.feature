@@ -5,5 +5,6 @@ Scenario: Testing a click button
 * driver "http://automationpractice.com"
 * print 'Working...'
 *  click("//a[@class='login']")
+
 # * mouse("//a[@class='login']").click()
  #* click("//button[(@id='SubmitLogin')]")
