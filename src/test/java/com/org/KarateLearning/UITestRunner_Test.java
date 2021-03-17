@@ -1,5 +1,6 @@
 package com.org.KarateLearning;
 
+/*
 import com.intuit.karate.junit5.Karate;
 
 public class UITestRunner_Test {
@@ -11,3 +12,4 @@ public class UITestRunner_Test {
 
 
 }
+*/
