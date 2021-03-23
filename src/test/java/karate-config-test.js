@@ -9,8 +9,7 @@ function fun()
     user: 'admin',
     pass: 'Xerox@123',
     driver: { type: 'chromedriver', executable:'C:/software/chromedriver_win32_88/chromedriver.exe', showDriverLog: true, addOptions:['--ignore-certificate-errors']  },
-    test: 'i am the one from default configuration'
-
+    test: 'just a test property which is present in test only'
 
  };
 /* var result = karate.callSingle('postDynamicEmailId.feature')
