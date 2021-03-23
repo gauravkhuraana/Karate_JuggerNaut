@@ -1,7 +1,9 @@
 Feature: sample
 
+  @first
   Scenario: first hello world
-    * print 'hello'
+    * print 'hello',test
 
+    @second
   Scenario: second scenario
-    * print 'second'
+    * print 'second',test
