@@ -1,2 +1,6 @@
 /target/
 /bin/
+
+
+# -- Added by gitignore-improver (missing patterns) --
+.idea/
